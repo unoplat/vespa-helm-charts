@@ -2,7 +2,6 @@
     "packages": {
       "charts/vespa": {
         "release-type": "helm",
-        "component" : "vespa",
         "changelog-path": "CHANGELOG.md"
       }
     }
