@@ -40,7 +40,7 @@ statefulSet:
     - containerPort: 19071
     - containerPort: 8081
       
-podSecurityContext: {}
+podSecurityContext: 
   # fsGroup: 2000
 
 readinessProbe:
@@ -49,13 +49,13 @@ readinessProbe:
      port: 19071
      scheme: HTTP
 
-securityContext: {}
+securityContext: 
   # capabilities:
   #   drop:
   #   - ALL
   # readOnlyRootFilesystem: true
   # runAsNonRoot: true
-  # runAsUser: 1000
+  runAsUser: 1000
 
 service:
   name: document-index-service
