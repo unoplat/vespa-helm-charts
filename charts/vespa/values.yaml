@@ -57,6 +57,9 @@ securityContext:
   # runAsNonRoot: true
   runAsUser: 1000
 
+labels:
+  app: vespa
+
 service:
   name: document-index-service
   type: LoadBalancer
