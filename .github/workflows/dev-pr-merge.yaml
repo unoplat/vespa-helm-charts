@@ -18,6 +18,10 @@ jobs:
       with:
         ref: main
         fetch-depth: 0 
+    - name: Configure Git
+      run: |
+        git config user.name "$GITHUB_ACTOR"
+        git config user.email "$GITHUB_ACTOR@users.noreply.github.com"          
     - name: Release Please
       id: release_action_plan
       uses: google-github-actions/release-please-action@v4
@@ -30,6 +34,9 @@ jobs:
 
     - name: Run chart-releaser
       uses: helm/chart-releaser-action@v1.6.0
+      with:
+        charts_dir: charts
       env:
-        CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"        
+        CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}" 
+
             
