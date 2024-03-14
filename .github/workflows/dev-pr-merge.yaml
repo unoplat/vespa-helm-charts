@@ -1,0 +1,29 @@
+name: Merge with develop branch
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - develop
+
+jobs:
+  dev-pr-merge:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout our repository
+      uses: actions/checkout@v2
+      with:
+        ref: develop
+        fetch-depth: 0 
+    - name: Release Please
+      id: release_action_plan
+      uses: google-github-actions/release-please-action@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        config-file: .github/configuration/release-please-config.json
+        manifest-file: .github/configuration/release-please-manifest.json
+        include-component-in-tag: true
+            
