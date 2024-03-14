@@ -33,10 +33,9 @@ jobs:
       uses: azure/setup-helm@v3
 
     - name: Run chart-releaser
+      if: steps.release_action_plan.outputs.releases_created == 'true'
       uses: helm/chart-releaser-action@v1.6.0
       with:
         charts_dir: charts
       env:
         CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}" 
-
-            
