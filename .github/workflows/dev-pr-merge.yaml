@@ -4,7 +4,7 @@ on:
   pull_request:
     types: [closed]
     branches:
-      - develop
+      - main
 
 jobs:
   dev-pr-merge:
@@ -16,7 +16,7 @@ jobs:
     - name: Checkout our repository
       uses: actions/checkout@v2
       with:
-        ref: develop
+        ref: main
         fetch-depth: 0 
     - name: Release Please
       id: release_action_plan
