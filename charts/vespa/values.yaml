@@ -89,7 +89,7 @@ ingress:
 
 resources: 
   requests:
-    memory: "500Mi"
+    memory: "1000Mi"
     cpu: "1000m"
   limits:
     memory: "4000Mi"
