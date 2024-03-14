@@ -1,0 +1,17 @@
+# Changelog
+
+## [0.1.0](https://github.com/unoplat/vespa-helm-charts/compare/vespa-v0.0.1...vespa-v0.1.0) (2024-03-14)
+
+
+### Features
+
+* initial chart commit ([ab4b63a](https://github.com/unoplat/vespa-helm-charts/commit/ab4b63ad37c3d74ffb2be8e2ffe6a77db8ac7c7b))
+* initial commit ([a3d575f](https://github.com/unoplat/vespa-helm-charts/commit/a3d575fb459a1d5e0b07ede150d7d996da119c72))
+
+
+### Bug Fixes
+
+* bug squashed ([653c66c](https://github.com/unoplat/vespa-helm-charts/commit/653c66c407829550e20315175622800baf2d5af8))
+* dummy change to resource to test release ([fa3f7bc](https://github.com/unoplat/vespa-helm-charts/commit/fa3f7bc6effc178d088cc8c5c879be6027310d07))
+* dummy commit to test release ([e685165](https://github.com/unoplat/vespa-helm-charts/commit/e6851659609aa07bc42f4ce707cb17ad45b41b62))
+* dummy fix to test release ([00e11f6](https://github.com/unoplat/vespa-helm-charts/commit/00e11f627aa14bf0361627c470da28fad5a75ac5))
