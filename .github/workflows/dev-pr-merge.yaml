@@ -25,5 +25,11 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         config-file: .github/configuration/release-please-config.json
         manifest-file: .github/configuration/release-please-manifest.json
-        
+    - name: Install Helm
+      uses: azure/setup-helm@v3
+
+    - name: Run chart-releaser
+      uses: helm/chart-releaser-action@v1.6.0
+      env:
+        CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"        
             
