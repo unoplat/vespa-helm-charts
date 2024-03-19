@@ -3,6 +3,16 @@ entries:
   vespa:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-03-19T09:56:39.523154206Z"
+    description: A Helm chart for Kubernetes
+    digest: 11250163ea2662b4e41f47f773425888260b84fc364c31162f1c709e03d686aa
+    name: vespa
+    type: application
+    urls:
+    - https://github.com/unoplat/vespa-helm-charts/releases/download/vespa-0.2.1/vespa-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-03-14T13:06:58.968520539Z"
     description: A Helm chart for Kubernetes
     digest: fffed2f10dd4b0ffbaf66c7fc87f4782099b83c66e1a36ee9a1bab4712e53d53
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://github.com/unoplat/vespa-helm-charts/releases/download/vespa-0.2.0/vespa-0.2.0.tgz
     version: 0.2.0
-generated: "2024-03-14T13:06:58.968528764Z"
+generated: "2024-03-19T09:56:39.523166339Z"
