@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/unoplat/vespa-helm-charts/compare/vespa-v0.2.0...vespa-v0.2.1) (2024-03-19)
+
+
+### Bug Fixes
+
+* testing helm package release ([df9fa97](https://github.com/unoplat/vespa-helm-charts/commit/df9fa9744c79440756e550fea5fbe03d7915d7cf))
+
 ## [0.2.0](https://github.com/unoplat/vespa-helm-charts/compare/vespa-0.1.0...vespa-v0.2.0) (2024-03-14)
 
 
