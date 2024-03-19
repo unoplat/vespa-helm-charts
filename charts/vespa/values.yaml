@@ -93,7 +93,7 @@ resources:
     cpu: "500m"
   limits:
     memory: "4000Mi"
-    cpu: "2500m"
+    cpu: "1500m"
 
 autoscaling:
   enabled: false
