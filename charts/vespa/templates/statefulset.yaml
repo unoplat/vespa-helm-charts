@@ -3,7 +3,7 @@ kind: StatefulSet
 metadata:
   name: {{ .Values.statefulSet.name }}
   labels:
-    {{- toYaml .Values.labels | nindent 4 }}
+    {{- include "vespa.labels" . | nindent 4 }}
 spec:
   serviceName: {{ .Values.statefulSet.name }}
   {{- if not .Values.autoscaling.enabled }}
