@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: {{ .Values.service.name }}
   labels:
-    {{- include "vespa.labels" . | nindent 4 }}
+    {{- toYaml .Values.labels | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
