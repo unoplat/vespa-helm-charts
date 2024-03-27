@@ -26,10 +26,13 @@ serviceAccount:
   # If not set and create is true, a name is generated using the fullname template
   name: ""
 
-
-# Additional annotations and labels to apply to pods
 podAnnotations: {}
-podLabels: {}
+podLabels:
+  app: vespa
+
+selectorLabels:
+  app: vespa
+  
 
 statefulSet:
   name: vespa

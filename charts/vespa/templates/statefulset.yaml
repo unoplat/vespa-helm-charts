@@ -3,7 +3,7 @@ kind: StatefulSet
 metadata:
   name: {{ .Values.statefulSet.name }}
   labels:
-    {{- include "vespa.labels" . | nindent 4 }}
+    {{- toYaml .Values.labels | nindent 4 }}
 spec:
   serviceName: {{ .Values.statefulSet.name }}
   {{- if not .Values.autoscaling.enabled }}
@@ -11,7 +11,7 @@ spec:
   {{- end }}
   selector:
     matchLabels:
-      {{- include "vespa.selectorLabels" . | nindent 6 }}
+      {{- toYaml .Values.selectorLabels | nindent 6 }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -19,7 +19,6 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        {{- include "vespa.labels" . | nindent 8 }}
         {{- with .Values.podLabels }}
         {{- toYaml . | nindent 8 }}
         {{- end }}
